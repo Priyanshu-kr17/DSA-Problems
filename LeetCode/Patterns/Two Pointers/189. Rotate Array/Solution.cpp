@@ -2,7 +2,7 @@ class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
         int n = nums.size();
-        if(k>=n) k = n%k;
+        if(k>=n) k = k%n;
 
         // flipping last k elements
         int i=n-k;

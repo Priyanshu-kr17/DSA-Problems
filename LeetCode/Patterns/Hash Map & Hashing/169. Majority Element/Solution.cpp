@@ -10,9 +10,9 @@ public:
             if(nums[i]==majority) count++;
             else {
                 count--;
-                if(count<0){
+                if(count==0){
                     majority=nums[i];
-                    count=1;
+                    count++;
                 }
             }
             i++;

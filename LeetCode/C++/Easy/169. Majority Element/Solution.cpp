@@ -1,21 +1,21 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        // Boyer–Moore Majority Vote Algorithm
-
-        int majority=nums[0];
-        int votes=1;
-        for(int i=1;i<nums.size();i++){
-            
-            if(nums[i]==majority) votes++;
-            else{
-                votes--;
-                if(votes==0){
+        // boyer moore majority algorithm
+        int n = nums.size();
+        int majority = nums[0];
+        int count = 1;
+        int i=1;
+        while(i<n){
+            if(nums[i]==majority) count++;
+            else {
+                count--;
+                if(count<0){
                     majority=nums[i];
-                    votes++;
+                    count=1;
                 }
             }
-           
+            i++;
         }
         return majority;
     }

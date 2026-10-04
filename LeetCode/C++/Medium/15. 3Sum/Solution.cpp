@@ -4,10 +4,14 @@ public:
         unordered_set<int> st;
         bool flag = false;
         for(int i=idx;i<nums.size();i++){
-            if(st.find(nums[i])!=st.end()){
-                v.push_back({target-nums[i],nums[i]});
+        
+            if(st.find(nums[i]) != st.end()) {
+            if(v.empty() || v.back().second != nums[i]) {
+                v.push_back({target - nums[i], nums[i]});
                 flag = true;
-            }
+            }       
+        }
+
             st.insert(target-nums[i]);
         }
         return flag==true;

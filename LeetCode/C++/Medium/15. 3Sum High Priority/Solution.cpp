@@ -4,6 +4,8 @@ public:
         unordered_set<int> st;
         bool flag = false;
         for(int i=idx;i<nums.size();i++){
+            if(i > idx && nums[i] == nums[i-1])
+            continue;
             if(st.find(nums[i])!=st.end()){
                 v.push_back({target-nums[i],nums[i]});
                 flag = true;

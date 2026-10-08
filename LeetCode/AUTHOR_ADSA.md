@@ -69,7 +69,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 - [x] [Valid Parentheses](./C++/Easy/20. Valid Parentheses/)
 - [ ] Longest Valid Parentheses
 - [x] [Maximum Nesting Depth of the Parentheses](./C++/Easy/1737. Maximum Nesting Depth of the Parentheses/)
-- [x] [Remove Outermost Parentheses](./C++/Easy/1021. Remove Outermost Parentheses/)
+- [x] [Remove Outermost Parentheses](./C++/Easy/1078. Remove Outermost Parentheses/)
 - [ ] Score of Parentheses
 - [ ] Minimum Add to Make Parentheses Valid
 - [ ] Minimum Remove to Make Valid Parentheses

@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs Advanced DSA interview preparation list.
 
 ## Progress
-- **Completed:** 4 / 65 (6.2%)
+- **Completed:** 5 / 65 (7.7%)
 
 ---
 
@@ -73,7 +73,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 - [ ] Score of Parentheses
 - [ ] Minimum Add to Make Parentheses Valid
 - [ ] Minimum Remove to Make Valid Parentheses
-- [ ] Minimum Insertions to Balance a Parentheses String
+- [x] [Minimum Insertions to Balance a Parentheses String](./C++/Medium/1648. Minimum Insertions to Balance a Parentheses String/)
 
 ### 📂 Module  2.3: String Reduction & Transfor
 - [ ] Make The String Great

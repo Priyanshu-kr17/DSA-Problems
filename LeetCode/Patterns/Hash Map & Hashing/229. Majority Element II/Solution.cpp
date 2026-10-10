@@ -8,6 +8,7 @@ public:
         int majority1=INT_MAX,majority2=INT_MAX;
         int count1=0,count2=0;
         
+        // Boyer–Moore Majority Vote Algorithm
 
         for(int i=0;i<n;i++){
             if(nums[i]==majority1) count1++;

@@ -1,6 +1,6 @@
 # 📝 152. Maximum Product Subarray🔥 High Priority (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/maximum-product-subarray)
+🔗 [Problem Link](https://leetcode.com/problems/maximum-product-subarray/solutions/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 

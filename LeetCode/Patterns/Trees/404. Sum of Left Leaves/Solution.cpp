@@ -1,13 +1,17 @@
 class Solution {
 public:
-    int leftsum(TreeNode* root){
-        if(root->left==NULL) return 0;
-        return root->left->val+leftsum(root->left);
-    }
+    
     int sumOfLeftLeaves(TreeNode* root) {
-        
         if(root==NULL) return 0;
-        return leftsum(root) + sumOfLeftLeaves(root->right);
+        int sum = 0;
+
+        if(root->left!=NULL && root->left->left==NULL && root->left->right==NULL){
+            sum+= root->left->val;
+        }
+        
+        sum+= sumOfLeftLeaves(root->left);
+        sum+= sumOfLeftLeaves(root->right);
+        return sum;
         
     }
 };

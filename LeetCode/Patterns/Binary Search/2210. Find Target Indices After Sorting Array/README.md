@@ -8,8 +8,8 @@
 Array, Binary Search, Sorting
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 0 ms
+- **Memory:** 15.1 MB
 
 ---
 

@@ -1,35 +1,59 @@
 class Solution {
 public:
-    vector<int> searchRange(vector<int>& nums, int x) {
+    vector<int> searchRange(vector<int>& nums, int target) {
+        vector<int> ans(2, -1);
         int n = nums.size();
-        int lo = 0, hi = n-1;
-        if(nums.size()==0) return {-1,-1};
-        vector<int> ans;
+        int lo = 0;
+        int hi = n - 1;
+        int mid;
+        // first occurence
+        while (hi >= lo) {
 
-        // first binary search
-        while(hi>=lo){
-            int mid = lo+((hi-lo)/2);
-
-            if(nums[mid]<x) lo=mid+1;
-            else hi=mid-1; 
+            mid = lo + (hi - lo) / 2;
+            if (mid == 0) {
+                if (nums[0] == target) {
+                    ans[0] = 0;
+                    break;
+                }
+            }
+            if (nums[mid] == target) {
+                if (nums[mid - 1] == target)
+                    hi = mid - 1;
+                else {
+                    ans[0] = mid;
+                    break;
+                }
+            } else if (nums[mid] > target)
+                hi = mid - 1;
+            else if (nums[mid] < target)
+                lo = mid + 1;
         }
-        if(nums[lo]==x)
-        ans.push_back(lo);
+        lo = 0;
+        hi = n-1;
 
-        lo=0,hi=n-1;
+        //      last occurence
+        while (hi >= lo) {
 
-        // second binary search
-        while(hi>=lo){
-            int mid = lo+((hi-lo)/2);
+            mid = lo + (hi - lo) / 2;
 
-            if(nums[mid]<=x) lo=mid+1;
-            else hi=mid-1; 
+            if (nums[n-1] == target) {
+                ans[1] = n-1;
+                break;
+            }
+
+            if (nums[mid] == target) {
+                if (nums[mid + 1] == target)
+                    lo = mid + 1;
+                else {
+                    ans[1] = mid;
+                    break;
+                }
+
+            } else if (nums[mid] > target)
+                hi = mid - 1;
+            else if (nums[mid] < target)
+                lo = mid + 1;
         }
-        if(nums[hi]==x)
-        ans.push_back(hi);
-
-        if(!ans.size()) return {-1,-1};
-
         return ans;
     }
 };

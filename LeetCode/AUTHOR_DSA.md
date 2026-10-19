@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs DSA core interview preparation list.
 
 ## Progress
-- **Completed:** 19 / 238 (8.0%)
+- **Completed:** 20 / 238 (8.4%)
 
 ---
 
@@ -107,7 +107,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 ### 📂 MODULE  3.6: SEARCHING WITHOUT FORMAL BI
 - [x] [Search Insert Position](./C++/Easy/35. Search Insert Position/)
 - [ ] Search in Rotated Sorted Array
-- [ ] Find First and Last Position of Element in Sorted Array
+- [x] [Find First and Last Position of Element in Sorted Array](./C++/Medium/34. Find First and Last Position of Element in Sorted Array/)
 - [ ] Find Peak Element
 - [ ] Maximum Gap
 

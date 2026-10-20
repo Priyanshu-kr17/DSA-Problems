@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs DSA core interview preparation list.
 
 ## Progress
-- **Completed:** 20 / 238 (8.4%)
+- **Completed:** 21 / 238 (8.8%)
 
 ---
 
@@ -51,7 +51,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [ ] Fibonacci Number
 - [ ] N-th Tribonacci Number
 - [ ] Clumsy Factorial
-- [ ] Arranging Coins
+- [x] [Arranging Coins](./C++/Easy/441. Arranging Coins/)
 
 ### 📂 MODULE  2.8: GREEDY, SIMULATION & OPTIMI
 - [ ] Broken Calculator

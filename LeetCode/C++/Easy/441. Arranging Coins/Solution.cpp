@@ -3,18 +3,14 @@ public:
     int arrangeCoins(int n) {
         int stairs=0;
 
-        int lo=0;
-        int hi = n/2;
+        int level=1;
 
-        while(hi>=lo){
-            int mid = lo+(hi-lo)/2;
-
-            if((mid*(mid+1))>=n) hi = mid-1;
-            else lo = mid+1;
+        while(n){
+            if(n<level) return stairs;
+            n=n-level;
+            level++;
+            stairs++;
         }
-
-        if(lo*(lo+1)>=n) return lo;
-        return hi;
-        
+        return stairs;
     }
 };

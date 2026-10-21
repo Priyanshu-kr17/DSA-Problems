@@ -1,31 +1,28 @@
 class Solution {
 public:
     int minOperations(string s) {
-        int i;
         int n = s.size();
-        int x=0;
 
+        if(is_sorted(s.begin(),s.end())) return 0;
         if(n==2){
-            if(s[0]>s[1]) return -1;
-            else return 0;
+            if(is_sorted(s.begin(),s.end())) return 0;
+            return -1;
         }
+        
+        // finding minimum and maximum in whole string 
+        char mn = *min_element(s.begin(), s.end());
+        char mx = *max_element(s.begin(), s.end());
 
-        for(i=0;i<n;i++){
-            if(i!=n-1 && s[i]>s[i+1]) break;
-        }
-        if(i==n) return -1;
+        if (s[0] == mn || s[n - 1] == mx)
+            return 1;
 
-        if(i>0){
-            sort(s.begin()+i,s.end());
-           x+=1;
+        if (s[0] == mx && s[n - 1] == mn) {
+            bool uniqueMax = count(s.begin(), s.end(), mx) == 1;
+            bool uniqueMin = count(s.begin(), s.end(), mn) == 1;
+
+        if (uniqueMax && uniqueMin)
+            return 3;
         }
-        else{
-            sort(s.begin(),s.end()-1);
-            x+=1;
-            sort(s.begin()+1,s.end());
-            x+=1;
-        }
-        if(s[0]>s[1]) x+=1;
-        return x;
+        return 2;
     }
 };

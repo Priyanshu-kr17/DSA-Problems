@@ -3,7 +3,7 @@
 Track your progress on the Grind 75 coding interview preparation list.
 
 ## Progress
-- **Completed:** 12 / 75 (16.0%)
+- **Completed:** 13 / 75 (17.3%)
 
 ---
 
@@ -16,7 +16,7 @@ Track your progress on the Grind 75 coding interview preparation list.
 - [ ] Product of Array Except Self
 - [x] [Maximum Subarray](./C++/Medium/53. Maximum Subarray/)
 - [x] [Maximum Product Subarray](./C++/Medium/152. Maximum Product Subarray/)
-- [ ] Find Minimum in Rotated Sorted Array
+- [x] [Find Minimum in Rotated Sorted Array](./C++/Medium/153. Find Minimum in Rotated Sorted Array/)
 - [x] [Search in Rotated Sorted Array](./C++/Medium/33. Search in Rotated Sorted Array/)
 - [x] [3Sum](./C++/Medium/15. 3Sum/)
 - [ ] Container With Most Water

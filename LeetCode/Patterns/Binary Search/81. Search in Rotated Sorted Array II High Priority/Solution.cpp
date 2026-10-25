@@ -4,6 +4,11 @@ public:
         int n = nums.size();
         int pivot = -1;
 
+        if(n==1){
+            if(nums[0]==target) return true;
+            return false; 
+        }
+
         for(int i=0;i<n-1;i++){
             if(nums[i]>nums[i+1]) {
                 pivot=i+1;

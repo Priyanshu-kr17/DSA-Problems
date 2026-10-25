@@ -21,7 +21,7 @@ public:
             lo=0;
             hi=n-1;
         } 
-        if(target>=nums[pivot] && target<=nums[n-1]){
+        else if(target>=nums[pivot] && target<=nums[n-1]){
             lo = pivot;
             hi = n-1;
         }

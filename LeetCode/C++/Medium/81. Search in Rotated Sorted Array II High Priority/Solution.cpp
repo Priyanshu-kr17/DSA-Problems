@@ -16,6 +16,7 @@ public:
             }
         }
         
+        
         int hi,lo;
         if(target>=nums[pivot] && target<=nums[n-1]){
             lo = pivot;

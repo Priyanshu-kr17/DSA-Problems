@@ -1,36 +1,32 @@
 class Solution {
-    bool checks(int speed,vector<int>& piles, int h){
-      int n=piles.size();
-      long long count=0;
-      for(int i=0;i<n;i++){
-        if(speed>piles[i])count++;
-        else if(piles[i] % speed==0) count= count + piles[i]/speed;
-        else count+= piles[i]/speed + 1;
-      }
-
-      if(count>h) return false;
-      else return true;
-    }
 public:
     int minEatingSpeed(vector<int>& piles, int h) {
-        int n=piles.size();
-        int mx=-1;
-        for(int i=0;i<n;i++){
-            if(piles[i]>mx)
-            mx=piles[i];
-        }
-        int hi=mx;
-        int lo=1;
-        int mid;
-        int ans;
+        int n = piles.size();
+
+        int lo =1;
+        int hi = *max_element(piles.begin(), piles.end());
+        int ans=INT_MAX;
+
         while(hi>=lo){
-            mid=lo+(hi-lo)/2;
-            if(checks(mid,piles,h)){
-                ans=mid;
+            int mid = lo+(hi-lo)/2;
+
+            long long x = 0;
+            // int time=0;
+            for(auto ele : piles){
+                if(mid>ele) x+=1;
+                else{
+                    if(ele%mid==0) x+= ele/mid;
+                    else x+= ele/mid+1;                
+                    }
+            }
+            
+            if(x>h) lo=mid+1;
+            else {
+                ans=min(ans,mid);
                 hi=mid-1;
             }
-            else lo=mid+1;
         }
+
         return ans;
     }
 };

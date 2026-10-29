@@ -11,7 +11,7 @@ public:
             int lo = 1;
             int hi = maxval;
 
-            while(hi>lo){
+            while(hi>=lo){
                 int mid = lo+(hi-lo)/2;
                 
                 int sum=0;

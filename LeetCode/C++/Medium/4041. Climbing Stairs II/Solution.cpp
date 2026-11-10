@@ -2,6 +2,7 @@ class Solution {
 public:
     int helper(int n, vector<int>& costs,vector<int> &dp){
         if(n == 0) return 0;
+        if(dp[n]!=-1) return dp[n];
             if(n == 1) return costs[0] + 1;
             if(n == 2) return min(costs[1] + 4, helper(1, costs,dp) + costs[1] + 1);
             if(n == 3) return min({
@@ -10,7 +11,7 @@ public:
                 helper(2, costs,dp) + costs[2] + 1
             });
         
-        if(dp[n]!=-1) return dp[n];
+        
 
         return dp[n] = min(
             costs[n-1]+(n-(n-1))*(n-(n-1))+helper(n-1,costs,dp),

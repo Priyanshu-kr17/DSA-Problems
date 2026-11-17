@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs DSA core interview preparation list.
 
 ## Progress
-- **Completed:** 24 / 238 (10.1%)
+- **Completed:** 25 / 238 (10.5%)
 
 ---
 
@@ -233,7 +233,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [ ] Valid Anagram
 - [ ] Group Anagrams
 - [ ] First Unique Character
-- [ ] Longest Palindrome
+- [x] [Longest Palindrome](./C++/Easy/409. Longest Palindrome/)
 - [ ] Sort Characters by Frequency
 - [ ] Isomorphic Strings
 - [ ] Reconstruct Original Digits from English
